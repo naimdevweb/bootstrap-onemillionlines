@@ -1,5 +1,51 @@
 /* Vos customisations des classes de Bootstrap */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* MON HEADER*/
+header{
+    background-color: black;
+   justify-content: center;
+   height: 50px;
+}
+nav{
+    display: flex;
+  justify-content: space-around;
+  margin-left: 150px;
+}
+.block{
+    color: rgb(119, 118, 118);
+    display: flex;
+    gap: 20px;
+    padding-top: 8px;
+}
+.Monimage{
+    margin-left: 150;
+    padding-top: 10px;
+}
 
+/* Home*/
+
+#home{
+    background-image: url(/Squelette/images/hero-image.jpg);
+    background-size: cover;
+    height: 40rem;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+}
+
+.Texte{
+    padding-top: 200px;
+    color: white;
+}
+
+
+strong{
+font-size: x-large;
+}
 
 
 
