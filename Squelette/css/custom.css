@@ -83,12 +83,44 @@ font-size: xx-large;
 }
 
 /* Deuxieme section*/
-
-#who{
+.content{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    text-align: center;
+    margin: 20px auto;
 }
+
+.content img{
+    margin-bottom: 12px;
+    width: 100px;
+    height: auto;
+    max-width: 300px;
+}
+.content .text-top{
+    margin-bottom: 10px;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content .text-top hr{
+    width: 70%;
+    border: 1px solid red;
+    margin: 8px auto 0;
+}
+
+.content .text-bottom{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: none;
+}
+
+
+
+
 
 .Whitetxt{
     color: orange;
@@ -100,10 +132,11 @@ font-size: xx-large;
     color: red;
     font-size: large;
     padding-top: 10px;
-    margin-left: 570px;
+    align-items: flex-start;
+    
 }
 .imgacad{
-  margin-left: 570px;
+  
 }
 
 .Texte4{
@@ -111,6 +144,7 @@ font-size: xx-large;
   margin-bottom: 10px;
   margin-right: 370px;
   text-align: center;
+ align-items: flex-start;
 }
 .trait{
     width: 100px;
@@ -188,17 +222,35 @@ h3{
 
 footer{
     background-color: orange;
+    color: white;
     width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 140px;
+    position: relative;
 }
 
-.display{
+.footer-content{
    display: flex;
- align-items: flex-start;
+ flex-direction: column;
+ text-align: center;
+ margin-left: 160px;
+ 
 }
 
-footer img{
-
+.footer-content img{
+width: 200px;
+margin-bottom: 10px;
 }
+
+.footer-content p{
+    margin: 0;
+    
+}
+
+
 /* Responsive Styling */
 
 @media (max-width: 1199px) {
