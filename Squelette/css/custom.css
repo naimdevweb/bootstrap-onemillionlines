@@ -8,7 +8,7 @@
 header{
     background-color: black;
    justify-content: center;
-   height: 50px;
+   height: 40px;
 }
 nav{
     display: flex;
@@ -26,28 +26,109 @@ nav{
     padding-top: 10px;
 }
 
+button{
+    background-color: rgb(251, 51, 33);
+   border-radius: 0px;
+   color: white;
+   border: none;
+    width: 120px;
+    height: 35px;
+}
+button:hover{
+    background-color: brown;
+}
+
+.Btn{
+    padding-top: 30px;
+}
+
+.code{
+    padding-top: 30px;
+}
+
 /* Home*/
 
 #home{
     background-image: url(/Squelette/images/hero-image.jpg);
     background-size: cover;
-    height: 40rem;
+    height: 25rem;
    background-repeat: no-repeat;
    display: flex;
-   justify-content: center;
+   text-align: center;
 }
 
 .Texte{
-    padding-top: 200px;
+    padding-top: 20px;
     color: white;
 }
 
-
-strong{
-font-size: x-large;
+.Texte1{
+   margin-left: 200px;
+    align-items: flex-start;
+    padding-top: 10px;
+    color: white;
+}
+.White{
+    font-size: large;
 }
 
+.Whitebtn{
+    font-size: larger;
+}
 
+span{
+font-weight: 900;
+font-size: xx-large;
+}
+
+/* Deuxieme section*/
+
+#who{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.Whitetxt{
+    color: orange;
+    font-size: large;
+    margin-top: 30px;
+}
+.Texte3{
+    font-weight: 900;
+    color: red;
+    font-size: large;
+    padding-top: 10px;
+    margin-left: 360px;
+}
+.imgacad{
+  margin-left: 360px;
+}
+
+.Texte4{
+    padding-top: 10px;
+  
+  text-align: center;
+}
+hr{
+    width: 100px;
+   margin-left: 372px;
+  margin-top: 5px;
+  color: red;
+}
+
+/* Troisieme section */
+#get-involved{
+background-color: rgb(230, 227, 227);
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-top: 20px;
+}
+
+i{
+    color: blue;
+}
 
 /* Responsive Styling */
 
