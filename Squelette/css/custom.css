@@ -30,9 +30,10 @@ button{
     background-color: rgb(251, 51, 33);
    border-radius: 0px;
    color: white;
+   border-radius: 3px;
    border: none;
     width: 120px;
-    height: 35px;
+    height: 40px;
 }
 button:hover{
     background-color: brown;
@@ -99,25 +100,28 @@ font-size: xx-large;
     color: red;
     font-size: large;
     padding-top: 10px;
-    margin-left: 360px;
+    margin-left: 570px;
 }
 .imgacad{
-  margin-left: 360px;
+  margin-left: 570px;
 }
 
 .Texte4{
     padding-top: 10px;
-  
+  margin-bottom: 10px;
+  margin-right: 370px;
   text-align: center;
 }
-hr{
+.trait{
     width: 100px;
-   margin-left: 372px;
-  margin-top: 5px;
+   margin-left: 582px;
+  margin-top: 2px;
   color: red;
 }
 
+
 /* Troisieme section */
+
 #get-involved{
 background-color: rgb(230, 227, 227);
 display: flex;
@@ -126,10 +130,75 @@ justify-content: center;
 padding-top: 20px;
 }
 
-i{
-    color: blue;
+
+.card {
+    width: 280px;
+    padding: 20px;
+  }
+
+  .flexcard{
+    display: flex;
+    justify-content: center;
+  }
+
+.Texte4{
+    font-weight: 900;
+    color: red;
+    font-size: large;
+    padding-top: 10px;
+    margin-right: 300px;
+    margin-left: 250px;
 }
 
+.trait2{
+    width: 100px;
+   margin-left: 260px;
+  margin-bottom: 20px;
+  color: red;
+}
+.card{
+  flex-wrap: wrap;
+}
+
+h3{
+    color: orange;
+    text-align: center;
+}
+.Titre2{
+  margin-top: 10px;
+  
+}
+.imgicone{
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.imgicone1{
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.orangebtn{
+    background-color: white;
+    color: orange;
+}
+
+  
+/* footer */
+
+footer{
+    background-color: orange;
+    width: 100%;
+}
+
+.display{
+   display: flex;
+ align-items: flex-start;
+}
+
+footer img{
+
+}
 /* Responsive Styling */
 
 @media (max-width: 1199px) {
