@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
  /* MON HEADER*/
+ 
 header{
     background-color: black;
    justify-content: center;
@@ -49,109 +51,107 @@ button:hover{
 
 /* Home*/
 
-#home{
+#home {
     background-image: url(/Squelette/images/hero-image.jpg);
     background-size: cover;
-    height: 25rem;
-   background-repeat: no-repeat;
-   display: flex;
-   text-align: center;
-   align-items: center;
+    height: 25rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
 }
 
-.Texte{
-    padding-top: 20px;
+.Texte1 p{
+    margin-top: 20px;
+    color: white; 
+    
+}
+
+.code {
+    margin-bottom: 10px;
+    width: 60px; 
+    max-width: 300px; 
+}
+
+
+button {
+    background-color: rgb(251, 51, 33);
+    border-radius: 3px;
     color: white;
+    border: none;
+    width: 120px; 
+    height: 40px; 
+    cursor: pointer; 
 }
 
-.Texte1{
-   margin-left: 250px;
-    align-items: flex-start;
-    padding-top: 10px;
-    color: white;
-}
-.White{
-    font-size: large;
-}
-
-.Whitebtn{
-    font-size: larger;
+button:hover {
+    background-color: brown; 
 }
 
 span{
-font-weight: 900;
-font-size: xx-large;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.White{
+    font-size: x-large;
 }
 
 /* Deuxieme section*/
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 20px auto;
+    width: 100%;
 }
 
-.content img{
+.content img {
     margin-bottom: 12px;
     width: 100px;
     height: auto;
-    max-width: 300px;
 }
-.content .text-top{
+
+.content .text-top {
     margin-bottom: 10px;
-    color: orange;
+    color: red;
     font-weight: bold;
     text-align: center;
 }
 
-.content .text-top hr{
+.content .text-top hr {
     width: 70%;
     border: 1px solid red;
-    margin: 8px auto 0;
+    margin: 5px auto 0;
+   
 }
 
-.content .text-bottom{
-    margin-top: 5px;
-    margin-bottom: 15px;
+.content .text-bottom {
+    margin: 10px 0;
     text-align: center;
-    line-height: none;
+    line-height: 1.5; 
 }
 
-
-
-
-
-.Whitetxt{
-    color: orange;
-    font-size: large;
-    margin-top: 30px;
-}
-.Texte3{
-    font-weight: 900;
+.Whitetxt {
     color: red;
     font-size: large;
-    padding-top: 10px;
-    align-items: flex-start;
-    
-}
-.imgacad{
-  
+    margin-top: 10px;
 }
 
-.Texte4{
-    padding-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 370px;
-  text-align: center;
- align-items: flex-start;
+.content .text-top h2 {
+    margin-bottom: 5px; 
 }
-.trait{
-    width: 100px;
-   margin-left: 582px;
-  margin-top: 2px;
-  color: red;
+
+.imgacad {
+    margin-top: 15px;
+    max-width: 100%; 
+    height: auto; 
+   
 }
 
 
@@ -245,10 +245,6 @@ i{
     height: 70%;
 }
 
-
-
-
-  
 /* footer */
 
 footer{
@@ -282,10 +278,10 @@ margin-bottom: 10px;
 }
 
 .fleche-top{
-    background-color:  #333333;
-    width: 30px;
+   
+    width: 50px;
     height: 30px;
-    border-radius: 50px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,64 +290,76 @@ margin-bottom: 10px;
     left: 190vh;
 }
 
-#header {
-    position: relative; /* Assure-toi que la position est définie */
-    padding-top: 50px; /* Assure qu'il y a de l'espace au-dessus si nécessaire */
-    margin-top: -50px; /* Déplace le contenu vers le haut pour compenser le padding */
+.png{
+    background-color: red;
 }
-
 
 
 /* Responsive Styling */
 
 @media (max-width: 1199px) {
     nav {
-        flex-direction: column; /* Passe les éléments du nav en colonne sur des écrans plus petits */
-        align-items: center; /* Centre les éléments */
-        margin-left: 0; /* Réinitialise la marge */
+        flex-direction: column; 
+        align-items: center; 
+        margin-left: 0;
     }
 
     .Texte1 {
-        margin-left: 0; /* Réinitialise la marge à gauche */
-        padding-top: 10px; /* Ajuste le padding si nécessaire */
+       margin-top:180px;
     }
 }
 
 @media (max-width: 991px) {
     .content {
-        margin: 10px; /* Réduit les marges */
+        margin: 10px; 
     }
 
     .card-container {
-        flex-direction: column; /* Empile les cartes verticalement */
-        align-items: center; /* Centre les cartes */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .card {
-        width: 90%; /* Ajuste la largeur des cartes */
+        width: 90%;
     }
 }
 
 @media (max-width: 767px) {
     header {
-        height: auto; /* Permet à l'en-tête de s'adapter */
+        height: auto;
     }
 
+
     button {
-        width: 100%; /* Les boutons prennent toute la largeur */
+        width: 100%; 
+        font-size: 16px; 
     }
 
     .btn {
-        width: 80%; /* Ajuste la largeur du bouton */
-        font-size: 14px; /* Ajuste la taille de la police */
+        width: 80%; 
+    }
+
+    .imgacad {
+        width:20%;
+        margin-top: 100; 
     }
 
     .code {
-        width: 80%; /* Ajuste la largeur de l'image */
+        margin-bottom: 200px; 
+        width: 15%;
     }
 
     .footer-content img {
-        width: 100%; /* Les images du footer prennent toute la largeur */
+        width: 100%; 
     }
-}
 
+    .content img {
+        width: 50%; 
+    }
+
+    span{
+       font-size: large;
+    }
+
+    
+}
