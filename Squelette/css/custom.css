@@ -56,6 +56,7 @@ button:hover{
    background-repeat: no-repeat;
    display: flex;
    text-align: center;
+   align-items: center;
 }
 
 .Texte{
@@ -64,7 +65,7 @@ button:hover{
 }
 
 .Texte1{
-   margin-left: 200px;
+   margin-left: 250px;
     align-items: flex-start;
     padding-top: 10px;
     color: white;
@@ -156,66 +157,96 @@ font-size: xx-large;
 
 /* Troisieme section */
 
-#get-involved{
-background-color: rgb(230, 227, 227);
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-padding-top: 20px;
-}
-
-
-.card {
-    width: 280px;
-    padding: 20px;
-  }
-
-  .flexcard{
-    display: flex;
-    justify-content: center;
-  }
-
-.Texte4{
-    font-weight: 900;
-    color: red;
-    font-size: large;
-    padding-top: 10px;
-    margin-right: 300px;
-    margin-left: 250px;
-}
-
-.trait2{
-    width: 100px;
-   margin-left: 260px;
-  margin-bottom: 20px;
-  color: red;
-}
-.card{
-  flex-wrap: wrap;
-}
-
-h3{
-    color: orange;
+.container {
     text-align: center;
 }
-.Titre2{
-  margin-top: 10px;
-  
-}
-.imgicone{
-    margin-left: 100px;
-    margin-bottom: 10px;
+
+h3 {
+   padding-top: 20px;
+    text-align: center;
+    color: red;
 }
 
-.imgicone1{
-    margin-left: 100px;
-    margin-bottom: 30px;
+h4{
+    color: red;
+    padding-top: 10px;
 }
 
-.orangebtn{
+hr {
+    width: 8%;
+    border: 1px solid red;
+    margin: 5px auto 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   
+}
+
+.contain{
+    background-color: rgb(248, 248, 248);
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.btn {
     background-color: white;
-    color: orange;
+    color: red;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 10px;
+    height: 28px;
 }
+
+.btn:hover {
+    background-color: #0056b3;
+    color: white; 
+}
+.fonts{
+    font-weight: 500;
+   font-size: 14px;
+   line-height: 1.3;
+    text-align: center;
+  margin: 3px;
+}
+i{
+   font-size: xx-large;
+   padding: 10px;
+}
+.image-container {
+    width: 80px;
+    height: 80px; 
+    border: 3px solid black; 
+    background-color: black;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    box-sizing: border-box; 
+   
+}
+
+.rounded-image {
+    width: 45px; 
+    height: 70%;
+}
+
+
+
 
   
 /* footer */
@@ -241,7 +272,7 @@ footer{
 }
 
 .footer-content img{
-width: 200px;
+width: 250px;
 margin-bottom: 10px;
 }
 
@@ -250,17 +281,77 @@ margin-bottom: 10px;
     
 }
 
+.fleche-top{
+    background-color:  #333333;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 90vh;
+    left: 190vh;
+}
+
+#header {
+    position: relative; /* Assure-toi que la position est définie */
+    padding-top: 50px; /* Assure qu'il y a de l'espace au-dessus si nécessaire */
+    margin-top: -50px; /* Déplace le contenu vers le haut pour compenser le padding */
+}
+
+
 
 /* Responsive Styling */
 
 @media (max-width: 1199px) {
+    nav {
+        flex-direction: column; /* Passe les éléments du nav en colonne sur des écrans plus petits */
+        align-items: center; /* Centre les éléments */
+        margin-left: 0; /* Réinitialise la marge */
+    }
 
+    .Texte1 {
+        margin-left: 0; /* Réinitialise la marge à gauche */
+        padding-top: 10px; /* Ajuste le padding si nécessaire */
+    }
 }
 
 @media (max-width: 991px) {
+    .content {
+        margin: 10px; /* Réduit les marges */
+    }
 
+    .card-container {
+        flex-direction: column; /* Empile les cartes verticalement */
+        align-items: center; /* Centre les cartes */
+    }
+
+    .card {
+        width: 90%; /* Ajuste la largeur des cartes */
+    }
 }
 
 @media (max-width: 767px) {
+    header {
+        height: auto; /* Permet à l'en-tête de s'adapter */
+    }
 
+    button {
+        width: 100%; /* Les boutons prennent toute la largeur */
+    }
+
+    .btn {
+        width: 80%; /* Ajuste la largeur du bouton */
+        font-size: 14px; /* Ajuste la taille de la police */
+    }
+
+    .code {
+        width: 80%; /* Ajuste la largeur de l'image */
+    }
+
+    .footer-content img {
+        width: 100%; /* Les images du footer prennent toute la largeur */
+    }
 }
+
