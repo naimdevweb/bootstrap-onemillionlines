@@ -28,18 +28,6 @@ nav{
     padding-top: 10px;
 }
 
-button{
-    background-color: rgb(251, 51, 33);
-   border-radius: 0px;
-   color: white;
-   border-radius: 3px;
-   border: none;
-    width: 120px;
-    height: 40px;
-}
-button:hover{
-    background-color: brown;
-}
 
 .Btn{
     padding-top: 30px;
@@ -75,28 +63,13 @@ button:hover{
     max-width: 300px; 
 }
 
-
-button {
-    background-color: rgb(251, 51, 33);
-    border-radius: 3px;
-    color: white;
-    border: none;
-    width: 120px; 
-    height: 40px; 
-    cursor: pointer; 
-}
-
-button:hover {
-    background-color: brown; 
-}
-
 span{
     font-size: xx-large;
     font-weight: 600;
 }
 
 .White{
-    font-size: x-large;
+    font-size: large;
 }
 
 /* Deuxieme section*/
@@ -109,6 +82,17 @@ span{
     text-align: center;
     margin: 20px auto;
     width: 100%;
+}
+
+.styled{
+    background-color:#d9534f;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+.styled:hover{
+    background-color:#ec423c ;
 }
 
 .content img {
@@ -126,7 +110,7 @@ span{
 
 .content .text-top hr {
     width: 70%;
-    border: 1px solid red;
+    border: 1px solid #f15b56;
     margin: 5px auto 0;
    
 }
@@ -138,20 +122,20 @@ span{
 }
 
 .Whitetxt {
-    color: red;
+    color: #f15b56;
     font-size: large;
     margin-top: 10px;
 }
 
 .content .text-top h2 {
     margin-bottom: 5px; 
+    color: #f15b56;
 }
 
 .imgacad {
     margin-top: 15px;
     max-width: 100%; 
     height: auto; 
-   
 }
 
 
@@ -164,17 +148,17 @@ span{
 h3 {
    padding-top: 20px;
     text-align: center;
-    color: red;
+    color: #f15b56;
 }
 
 h4{
-    color: red;
+    color: #f15b56;
     padding-top: 10px;
 }
 
 hr {
     width: 8%;
-    border: 1px solid red;
+    border: 1px solid #f15b56;
     margin: 5px auto 0;
 }
 
@@ -186,7 +170,7 @@ hr {
 }
 
 .contain{
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(red);
 }
 
 .card {
@@ -204,17 +188,18 @@ hr {
 
 .btn {
     background-color: white;
-    color: red;
-    border: 1px solid black;
+    color: #f5554f;
+    border: 1px solid #f7ecec;
     border-radius: 3px;
-    margin-top: 10px;
-    height: 28px;
+   padding: 0.3rem 8px;
+   margin-top: 5px;
+   font-size: smaller;
 }
 
 .btn:hover {
-    background-color: #0056b3;
-    color: white; 
+   background-color: rgb(246, 155, 155); 
 }
+
 .fonts{
     font-weight: 500;
    font-size: 14px;
@@ -222,10 +207,12 @@ hr {
     text-align: center;
   margin: 3px;
 }
+
 i{
    font-size: xx-large;
    padding: 10px;
 }
+
 .image-container {
     width: 80px;
     height: 80px; 
@@ -248,10 +235,10 @@ i{
 /* footer */
 
 footer{
-    background-color: orange;
+    background-color: #fa6f6a;
     color: white;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -274,14 +261,11 @@ margin-bottom: 10px;
 
 .footer-content p{
     margin: 0;
-    
 }
 
 .fleche-top{
-   
     width: 50px;
     height: 30px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
